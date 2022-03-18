@@ -1,0 +1,125 @@
+/* 
+desktop:1200px; // col-xl
+laptop:992px;// col-lg
+tablet:768px;// md
+phone:480px; // sn 
+*/
+
+@font-face {
+  font-family: "Valencia";
+  src: url("src/assets/fonts/Valencia.ttf") format("truetype");
+}
+
+#welcome {
+  display: flex;
+  height: 100vh;
+  margin-left: 20vh;
+  align-items: center;
+  justify-content: flex-start;
+}
+@media screen and (max-width: 480px) {
+  #welcome {
+    margin-left: 2vh;
+  }
+}
+
+#icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#skillimg {
+  transition: transform 0.7s ease-in-out;
+}
+
+#skillimg:hover {
+  transform: rotate3d(0, 90, 0, 360deg);
+}
+
+a {
+  height: 8vh;
+  padding-bottom: 4vh;
+}
+
+.h1 {
+  font-weight: 400;
+  font-family: Valencia;
+  font-size: 100px;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: AvenirHeavy;
+}
+
+#me {
+  font-size: 22px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  font-family: AvenirLight;
+  max-width: 800px;
+}
+
+#about {
+  color: rgb(238, 238, 238);
+  display: flex;
+  min-height: 40vh;
+  background-color: #000000d0;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.5;
+}
+@media screen and (max-width: 480px) {
+  #about {
+    min-height: 70vh;
+  }
+}
+
+img {
+  height: 5vh;
+}
+
+#skills {
+  display: flex;
+  min-height: 80vh;
+  align-items: center;
+  text-align: center;
+  line-height: 1.5;
+  max-width: 800px;
+}
+@media screen and (max-width: 480px) {
+  #skills {
+    min-height: 130vh;
+  }
+}
+
+mat-chip {
+  font-size: 2vh;
+}
+
+mat-card img {
+  object-fit: cover;
+  width: 10vh;
+  height: 10vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+.list {
+  width: auto;
+  font-family: AvenirLight;
+  font-weight: 400;
+  margin: 2vh;
+  margin-left: 5vh;
+  font-size: 2vh;
+}
+@media screen and (max-width: 480px) {
+  .list {
+    margin-left: 1vh;
+  }
+}
