@@ -63,10 +63,11 @@ h1 {
 }
 
 #about {
-  color: rgb(238, 238, 238);
+  /* color: rgb(238, 238, 238); */
+  color: #f6f6f6;
   display: flex;
   min-height: 40vh;
-  background-color: #000000d0;
+  background-color: #302a18;
   align-items: center;
   justify-content: center;
   text-align: center;

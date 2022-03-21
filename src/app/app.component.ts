@@ -90,5 +90,20 @@ export class AppComponent implements AfterViewInit {
       },
       { once: true }
     );
+
+    const q = document.querySelector('.list')!;
+    q.addEventListener(
+      'mouseenter',
+      () => {
+        anime.timeline({ loop: false }).add({
+          targets: '.list mat-chip',
+          scale: [4, 1],
+          opacity: [0, 1],
+          easing: 'easeOutCirc',
+          delay: (_el: any, i: number) => 200 * i,
+        });
+      },
+      { once: true }
+    );
   }
 }
