@@ -124,3 +124,24 @@ a {
     margin-left: 1vh;
   }
 }
+
+#contact {
+  background-color: #302a18;
+  color: #f6f6f6;
+}
+
+mat-form-field {
+  margin-left: 2vh;
+  align-items: center;
+}
+
+#end {
+  color: #f6f6f6;
+  display: flex;
+  font-size: 25px;
+  font-family: AvenirHeavy;
+  line-height: 1.5;
+  max-width: 80vh; 
+  padding-right: 25vh;
+  padding-top: 5vh;
+}

@@ -1,4 +1,6 @@
 import { Component, AfterViewInit } from '@angular/core';
+import { FormControl, Validators } from '@angular/forms';
+import { ToastrService } from 'ngx-toastr';
 declare var anime: any;
 
 @Component({
@@ -6,10 +8,21 @@ declare var anime: any;
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
+
 export class AppComponent implements AfterViewInit {
   git: string = 'assets/img/github-original.svg';
   linkedin: string = 'assets/img/linkedin.svg';
   file: string = 'assets/img/download.svg';
+
+  email = new FormControl('', [Validators.required, Validators.email]);
+
+  getErrorMessage() {
+    if (this.email.hasError('required')) {
+      return 'You must enter a value';
+    }
+
+    return this.email.hasError('email') ? 'Not a valid email' : '';
+  }
 
   public list = [
     {
@@ -105,5 +118,10 @@ export class AppComponent implements AfterViewInit {
       },
       { once: true }
     );
+  }
+
+  constructor(private toastr: ToastrService) { }
+  showToatr() {
+    this.toastr.success('Mail sent successfully');
   }
 }
