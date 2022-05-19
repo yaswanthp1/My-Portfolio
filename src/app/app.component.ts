@@ -1,4 +1,4 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { Component, AfterViewInit, ElementRef } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 import { ToastrService } from 'ngx-toastr';
 declare var anime: any;
@@ -8,7 +8,6 @@ declare var anime: any;
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-
 export class AppComponent implements AfterViewInit {
   git: string = 'assets/img/github-original.svg';
   linkedin: string = 'assets/img/linkedin.svg';
@@ -104,23 +103,31 @@ export class AppComponent implements AfterViewInit {
       { once: true }
     );
 
-    const q = document.querySelector('.list')!;
-    q.addEventListener(
-      'mouseenter',
-      () => {
-        anime.timeline({ loop: false }).add({
-          targets: '.list mat-chip',
-          scale: [4, 1],
-          opacity: [0, 1],
-          easing: 'easeOutCirc',
-          delay: (_el: any, i: number) => 200 * i,
-        });
-      },
-      { once: true }
-    );
+    const q: any = document.querySelector('.list')!;
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          // run your animation code here
+          {
+            anime.timeline({ loop: false }).add({
+              targets: '.list mat-chip',
+              scale: [4, 1],
+              opacity: [0, 1],
+              easing: 'easeOutCirc',
+              delay: (_el: any, i: number) => 300 * i,
+            });
+          }
+          {
+            once: true;
+          }
+          observer.disconnect(); // disconnect if you want to stop observing else it will rerun every time its back in view. Just make sure you disconnect in ngOnDestroy instead
+        }
+      });
+    });
+    observer.observe(q);
   }
 
-  constructor(private toastr: ToastrService) { }
+  constructor(private toastr: ToastrService) {}
   showToatr() {
     this.toastr.success('Mail sent successfully');
   }

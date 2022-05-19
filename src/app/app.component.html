@@ -1,172 +1,221 @@
 <section>
-	<div class="container-fuild">
-		<div class="flex-container">
-			<div class="row">
-				<div class="col" id="welcome">
-					<div class="row">
-						<div class="text h1" id="name">
-							Yaswanth Pasupuleti
-						</div>
-						<div class="text h2" id="title">
-							Software Engineer / Front End Angular Developer
-						</div>
-					</div>
-				</div>
-				<div class="col" id="icons">
-					<div class="d-none d-lg-block">
-						<div class="row">
-							<a href="https://github.com/yaswanthp1" target="_blank" rel="noopener noreferrer">
-								<img [src]="git" alt="github">
-							</a>
-							<a href="https://www.linkedin.com/in/yaswanth-pasupuleti-129229166/" target="_blank"
-								rel="noopener noreferrer">
-								<img [src]="linkedin" alt="linkedin">
-							</a>
-							<a href="https://drive.google.com/file/d/1beQhFXQJJhcpy5G5F5YlsYSyu7c1AkQB/view?usp=sharing"
-								target="_blank" rel="noopener noreferrer">
-								<img [src]="file" alt="filedownload">
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+  <div class="container-fuild">
+    <div class="flex-container">
+      <div class="row">
+        <div class="col" id="welcome">
+          <div class="row">
+            <div class="text h1" id="name">Yaswanth Pasupuleti</div>
+            <div class="text h2" id="title">
+              Software Engineer / Front End Angular Developer
+            </div>
+          </div>
+        </div>
+        <div class="col" id="icons">
+          <div class="d-none d-lg-block">
+            <div class="row">
+              <a
+                href="https://github.com/yaswanthp1"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img [src]="git" alt="github" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/yaswanth-pasupuleti-129229166/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img [src]="linkedin" alt="linkedin" />
+              </a>
+              <a
+                href="https://drive.google.com/file/d/1beQhFXQJJhcpy5G5F5YlsYSyu7c1AkQB/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img [src]="file" alt="filedownload" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section>
-	<div class="container-fuild" id="about">
-		<div class="row-12">
-			<div>
-				<h1 class="text" id="greet">Hi, I’m Yaswanth. Nice to meet you.</h1>
-			</div>
-			<div class="text" id="me">
-				I’m a Front-end developer who is passionate about UI design and new technologies.
-				Well-organised person, problem solver, and a fan of Anime.
-				Currently, I’m focused on building Technology Knowledge and Carrer Development.
-			</div>
-			<div class="row mt-4" id="icons1">
-				<div class="col" *ngFor="let item of list">
-					<img [src]="item.ImageUrl" alt="i" id="skillimg">
-				</div>
-			</div>
-		</div>
-	</div>
+  <div class="container-fuild" id="about">
+    <div class="row-12">
+      <div>
+        <h1 class="text" id="greet">Hi, I’m Yaswanth. Nice to meet you.</h1>
+      </div>
+      <div class="text" id="me">
+        I’m a Front-end developer who is passionate about UI design and new
+        technologies. Well-organised person, problem solver, and a fan of Anime.
+        Currently, I’m focused on building Technology Knowledge and Carrer
+        Development.
+      </div>
+      <div class="row mt-4" id="icons1">
+        <div class="col" *ngFor="let item of list">
+          <img [src]="item.ImageUrl" alt="i" id="skillimg" />
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section>
-	<div class="container" id="skills">
-		<div class="row">
-			<div class="text">
-				<h1>Skills & Tools</h1>
-			</div>
-			<div class="list">
-				<mat-chip-list>
-					<mat-chip *ngFor="let item of skills">{{item}}</mat-chip>
-				</mat-chip-list>
-			</div>
-			<div class="text mt-5">
-				<h1>
-					Licenses & Certifications
-				</h1>
-			</div>
-			<div class="col mt-5">
-				<mat-card style="background-color: white;">
-					<mat-card-header style="color: black;">
-						<mat-card-title>
-							Microsoft Certified: Azure Fundamentals
-						</mat-card-title>
-						<img mat-card-avatar src="assets/img/azure-fundamentals-600x600.png" alt="Azure Fundamentals">
-					</mat-card-header>
-					<mat-card-content style="color: black;">
-						Issued Nov 2021 - No Expiration Date
-					</mat-card-content>
-					<a href="https://www.credly.com/badges/d67c4fd7-d234-4141-9558-d9a37df5919f?source=linked_in_profile"
-						target="_blank" rel="noopener noreferrer">
-						<mat-chip>Show credential</mat-chip>
-					</a>
-				</mat-card>
-			</div>
-			<div class="col mt-5">
-				<mat-card style="background-color: white;">
-					<mat-card-header>
-						<mat-card-title style="color: black;">
-							Microsoft Certified: Azure Administrator
-						</mat-card-title>
-						<img mat-card-avater src="assets/img/azure-administrator-associate-600x600.png"
-							alt="Azure Administrator Associate">
-					</mat-card-header>
-					<mat-card-content style="color: black;">
-						Issued Dec 2021 - Expires Dec 2022
-					</mat-card-content>
-					<a href="https://www.credly.com/badges/de255db2-23be-437f-aa08-849a04e0f252?source=linked_in_profile"
-						target="_blank" rel="noopener noreferrer">
-						<mat-chip>Show credential</mat-chip>
-					</a>
-				</mat-card>
-			</div>
-		</div>
-	</div>
+  <div class="container" id="skills">
+    <div class="row">
+      <div class="text">
+        <h1>Skills & Tools</h1>
+      </div>
+      <div class="list">
+        <mat-chip-list>
+          <mat-chip *ngFor="let item of skills">{{ item }}</mat-chip>
+        </mat-chip-list>
+      </div>
+      <div class="text mt-5">
+        <h1>Licenses & Certifications</h1>
+      </div>
+      <div class="col mt-5">
+        <mat-card style="background-color: white">
+          <mat-card-header style="color: black">
+            <mat-card-title>
+              Microsoft Certified: Azure Fundamentals
+            </mat-card-title>
+            <img
+              mat-card-avatar
+              src="assets/img/azure-fundamentals-600x600.png"
+              alt="Azure Fundamentals"
+            />
+          </mat-card-header>
+          <mat-card-content style="color: black">
+            Issued Nov 2021 - No Expiration Date
+          </mat-card-content>
+          <a
+            href="https://www.credly.com/badges/d67c4fd7-d234-4141-9558-d9a37df5919f?source=linked_in_profile"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <mat-chip>Show credential</mat-chip>
+          </a>
+        </mat-card>
+      </div>
+      <div class="col mt-5">
+        <mat-card style="background-color: white">
+          <mat-card-header>
+            <mat-card-title style="color: black">
+              Microsoft Certified: Azure Administrator
+            </mat-card-title>
+            <img
+              mat-card-avater
+              src="assets/img/azure-administrator-associate-600x600.png"
+              alt="Azure Administrator Associate"
+            />
+          </mat-card-header>
+          <mat-card-content style="color: black">
+            Issued Dec 2021 - Expires Dec 2022
+          </mat-card-content>
+          <a
+            href="https://www.credly.com/badges/de255db2-23be-437f-aa08-849a04e0f252?source=linked_in_profile"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <mat-chip>Show credential</mat-chip>
+          </a>
+        </mat-card>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section>
-	<div class="container-fuild" id="contact">
-		<div class="text-center pt-4">
-			<h1> Contact Me </h1>
-		</div>
-		<div class="row">
-			<div class="col">
-				<form action="https://formsubmit.co/7e5459657274ba33070794ae36e6608a" method="POST"
-					style="padding-left: 15vh;">
-					<input type="hidden" name="_captcha" value="false">
-					<input type="hidden" name="_subject" value="New submission from Portfolio!">
-					<input type="hidden" name="_template" value="box">
-					<div class="row">
-						<div class="col">
-							<mat-form-field appearance="fill">
-								<mat-label>First name</mat-label>
-								<input matInput type="text" name="name">
-								<mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-							</mat-form-field>
+  <div class="container-fuild" id="contact">
+    <div class="text-center pt-4">
+      <h1>Contact Me</h1>
+    </div>
+    <div class="row">
+      <div class="col">
+        <form
+          action="https://formsubmit.co/7e5459657274ba33070794ae36e6608a"
+          method="POST"
+          style="padding-left: 15vh"
+        >
+          <input type="hidden" name="_captcha" value="false" />
+          <input
+            type="hidden"
+            name="_subject"
+            value="New submission from Portfolio!"
+          />
+          <input type="hidden" name="_template" value="box" />
+          <div class="row">
+            <div class="col">
+              <mat-form-field appearance="fill" style="width: 25vh">
+                <mat-label>First name</mat-label>
+                <input matInput type="text" name="name" />
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+              </mat-form-field>
 
-							<mat-form-field appearance="fill">
-								<mat-label>Last name</mat-label>
-								<input matInput>
-								<mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-							</mat-form-field>
-						</div>
-						<div class="row">
-							<mat-form-field appearance="fill" style="max-width: 55vh;">
-								<mat-label>Enter your email</mat-label>
-								<input matInput placeholder="pat@example.com" [formControl]="email" type="email"
-									name="email" required>
-								<mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
-							</mat-form-field>
-						</div>
-						<div class="row">
-							<mat-form-field appearance="fill" style="max-width: 55vh;">
-								<mat-label>Your Message</mat-label>
-								<input matInput type="text" name="message">
-							</mat-form-field>
-						</div>
-					</div>
-					<mat-card-actions>
-						<div class="btn mx-3">
-							<button mat-raised-button color="accent" type="submit" (click)="showToatr()">Send</button>
-						</div>
-					</mat-card-actions>
-					<input type="hidden" name="_next" value="https://yaswanthportfolio.netlify.app/">
-				</form>
-			</div>
-			<div class="col text-center" id="end">
-				<p>If you have any questions about my services, or just want to say hello, feel free to contact me.</p>
-			</div>
-		</div>
-		<mat-divider></mat-divider>
-		<div class="row">
-			<div class="text-center p-4" style="color: white;">
-				<span>&#169; 2022 Copyright: Yaswanth Pasupuleti</span>
-			</div>
-		</div>
-	</div>
+              <mat-form-field appearance="fill" style="width: 25vh">
+                <mat-label>Last name</mat-label>
+                <input matInput />
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+              </mat-form-field>
+            </div>
+            <div class="row">
+              <mat-form-field appearance="fill" style="max-width: 55vh">
+                <mat-label>Enter your email</mat-label>
+                <input
+                  matInput
+                  placeholder="pat@example.com"
+                  [formControl]="email"
+                  type="email"
+                  name="email"
+                  required
+                />
+                <mat-error *ngIf="email.invalid">{{
+                  getErrorMessage()
+                }}</mat-error>
+              </mat-form-field>
+            </div>
+            <div class="row">
+              <mat-form-field appearance="fill" style="max-width: 55vh">
+                <mat-label>Your Message</mat-label>
+                <input matInput type="text" name="message" />
+              </mat-form-field>
+            </div>
+          </div>
+          <mat-card-actions>
+            <div class="btn mx-3">
+              <button
+                mat-raised-button
+                color="accent"
+                type="submit"
+                (click)="showToatr()"
+              >
+                Send
+              </button>
+            </div>
+          </mat-card-actions>
+          <input
+            type="hidden"
+            name="_next"
+            value="https://yaswanthportfolio.netlify.app/"
+          />
+        </form>
+      </div>
+      <div class="col text-center" id="end">
+        <p>
+          If you have any questions about my services, or just want to say
+          hello, feel free to contact me.
+        </p>
+      </div>
+    </div>
+    <mat-divider></mat-divider>
+    <div class="row">
+      <div class="text-center p-4" style="color: white">
+        <span>&#169; 2022 Copyright: Yaswanth Pasupuleti</span>
+      </div>
+    </div>
+  </div>
 </section>
