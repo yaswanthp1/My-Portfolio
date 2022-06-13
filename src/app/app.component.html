@@ -69,19 +69,22 @@
       <h1 class="text">Experience</h1>
     </div>
     <div class="row">
-      <div class="col-4">
+      <div class="col-4 d-none d-lg-block">
         <img src="assets/img/tcs.png" alt="TCS" id="tcs" />
       </div>
       <div class="col">
-        <h2>
-          Angular Developer
-          <h2 class="text-muted">October 2020 - Present</h2>
-        </h2>
-        <pre class="h5" style="overflow: hidden">
-        &bull; At TCS, I work on Front End application based Angular framework and
-          softwares such as Jenkins, Bitbucket and OpenShift. 
-          I am involved in both dev and support team for Production based model.
-        </pre>
+        <div class="container">
+          <h2>
+            Angular Developer
+            <h2 class="text-muted">October 2020 - Present</h2>
+          </h2>
+          <p class="h5" style="max-width: 600px; margin-left: 4vh">
+            At TCS, I work on Front End application based Angular framework and
+            softwares such as Jenkins, Bitbucket and OpenShift.<br />
+            I am involved in both dev and support team for Production based
+            model.
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -193,84 +196,86 @@
 
 <section>
   <div class="container-fuild" id="contact">
-    <div class="text-center pt-4">
-      <h1>Contact Me</h1>
-    </div>
-    <div class="row">
-      <div class="col">
-        <form
-          action="https://formsubmit.co/7e5459657274ba33070794ae36e6608a"
-          method="POST"
-          style="padding-left: 15vh"
-        >
-          <input type="hidden" name="_captcha" value="false" />
-          <input
-            type="hidden"
-            name="_subject"
-            value="New submission from Portfolio!"
-          />
-          <input type="hidden" name="_template" value="box" />
-          <div class="row">
-            <div class="col">
-              <mat-form-field appearance="fill" style="width: 25vh">
-                <mat-label>First name</mat-label>
-                <input matInput type="text" name="name" />
-                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-              </mat-form-field>
-
-              <mat-form-field appearance="fill" style="width: 25vh">
-                <mat-label>Last name</mat-label>
-                <input matInput />
-                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-              </mat-form-field>
-            </div>
-            <div class="row">
-              <mat-form-field appearance="fill" style="max-width: 55vh">
-                <mat-label>Enter your email</mat-label>
-                <input
-                  matInput
-                  placeholder="pat@example.com"
-                  [formControl]="email"
-                  type="email"
-                  name="email"
-                  required
-                />
-                <mat-error *ngIf="email.invalid">{{
-                  getErrorMessage()
-                }}</mat-error>
-              </mat-form-field>
-            </div>
-            <div class="row">
-              <mat-form-field appearance="fill" style="max-width: 55vh">
-                <mat-label>Your Message</mat-label>
-                <input matInput type="text" name="message" />
-              </mat-form-field>
-            </div>
-          </div>
-          <mat-card-actions>
-            <div class="btn mx-3">
-              <button
-                mat-raised-button
-                color="accent"
-                type="submit"
-                (click)="showToatr()"
-              >
-                Send
-              </button>
-            </div>
-          </mat-card-actions>
-          <input
-            type="hidden"
-            name="_next"
-            value="https://yaswanthportfolio.netlify.app/"
-          />
-        </form>
+    <div class="d-none d-lg-block">
+      <div class="text-center pt-4">
+        <h1>Contact Me</h1>
       </div>
-      <div class="col text-center" id="end">
-        <p>
-          If you have any questions about my services, or just want to say
-          hello, feel free to contact me.
-        </p>
+      <div class="row">
+        <div class="col">
+          <form
+            action="https://formsubmit.co/7e5459657274ba33070794ae36e6608a"
+            method="POST"
+            style="padding-left: 15vh"
+          >
+            <input type="hidden" name="_captcha" value="false" />
+            <input
+              type="hidden"
+              name="_subject"
+              value="New submission from Portfolio!"
+            />
+            <input type="hidden" name="_template" value="box" />
+            <div class="row">
+              <div class="col">
+                <mat-form-field appearance="fill" style="width: 25vh">
+                  <mat-label>First name</mat-label>
+                  <input matInput type="text" name="name" />
+                  <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                </mat-form-field>
+
+                <mat-form-field appearance="fill" style="width: 25vh">
+                  <mat-label>Last name</mat-label>
+                  <input matInput />
+                  <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                </mat-form-field>
+              </div>
+              <div class="row">
+                <mat-form-field appearance="fill" style="max-width: 55vh">
+                  <mat-label>Enter your email</mat-label>
+                  <input
+                    matInput
+                    placeholder="pat@example.com"
+                    [formControl]="email"
+                    type="email"
+                    name="email"
+                    required
+                  />
+                  <mat-error *ngIf="email.invalid">{{
+                    getErrorMessage()
+                  }}</mat-error>
+                </mat-form-field>
+              </div>
+              <div class="row">
+                <mat-form-field appearance="fill" style="max-width: 55vh">
+                  <mat-label>Your Message</mat-label>
+                  <input matInput type="text" name="message" />
+                </mat-form-field>
+              </div>
+            </div>
+            <mat-card-actions>
+              <div class="btn mx-3">
+                <button
+                  mat-raised-button
+                  color="accent"
+                  type="submit"
+                  (click)="showToatr()"
+                >
+                  Send
+                </button>
+              </div>
+            </mat-card-actions>
+            <input
+              type="hidden"
+              name="_next"
+              value="https://yaswanthportfolio.netlify.app/"
+            />
+          </form>
+        </div>
+        <div class="col text-center" id="end">
+          <p>
+            If you have any questions about my services, or just want to say
+            hello, feel free to contact me.
+          </p>
+        </div>
       </div>
     </div>
     <mat-divider></mat-divider>
