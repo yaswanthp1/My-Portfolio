@@ -50,7 +50,7 @@ export class AppComponent implements AfterViewInit {
     'BOOTSTRAP',
     'PYTHON',
     'MICROSOFT AZURE',
-    'Bitbucket',
+    'BITBUCKET',
     'Github',
     'Visual Studio Code',
     'IntelliJ',
