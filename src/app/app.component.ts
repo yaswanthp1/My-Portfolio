@@ -51,9 +51,9 @@ export class AppComponent implements AfterViewInit {
     'PYTHON',
     'MICROSOFT AZURE',
     'BITBUCKET',
-    'Github',
-    'Visual Studio Code',
-    'IntelliJ',
+    'GITHUB',
+    'VISUAL STUDIO CODE',
+    'INTELLIJ',
   ];
 
   ngAfterViewInit(): void {
