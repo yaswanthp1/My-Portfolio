@@ -48,12 +48,11 @@ export class AppComponent implements AfterViewInit {
     'JAVASCRIPT',
     'ANGULAR',
     'BOOTSTRAP',
+    'RESPONSIVE & ADAPTIVE DESIGN',
+    'UI Maintenance',
     'PYTHON',
     'MICROSOFT AZURE',
-    'BITBUCKET',
-    'GITHUB',
     'VISUAL STUDIO CODE',
-    'INTELLIJ',
   ];
 
   ngAfterViewInit(): void {

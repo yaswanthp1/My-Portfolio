@@ -29,6 +29,50 @@ phone:480px; // sn
   justify-content: flex-end;
 }
 
+.scroll-down {
+  height: 50px;
+  width: 30px;
+  position: relative;
+  left: -19.5vh;
+  bottom: -40vh;
+  cursor: pointer;
+}
+
+.scroll-down::before,
+.scroll-down::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  /* left: 50%; */
+  border: 2px solid black;
+  height: 10px;
+  width: 10px;
+  transform: translate(-50%, -100%) rotate(45deg);
+  border-top: transparent;
+  border-left: transparent;
+  animation: scroll-down 1s ease-in-out infinite;
+}
+
+.scroll-down::after {
+  top: 30%;
+  animation-delay: 0.3s;
+}
+@keyframes scroll-down {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    top: 90%;
+  }
+}
+
 #skillimg {
   transition: transform 0.7s ease-in-out;
 }
@@ -132,6 +176,14 @@ a {
 @media screen and (max-width: 480px) {
   .list {
     margin-left: 1vh;
+  }
+  .scroll-down {
+    height: 50px;
+    width: 30px;
+    position: relative;
+    left: -25vh;
+    bottom: -40vh;
+    cursor: pointer;
   }
 }
 
