@@ -1,335 +1,347 @@
-<section>
-  <div class="container-fuild">
-    <div class="flex-container">
-      <div class="row">
-        <div class="col" id="welcome">
-          <div class="row">
-            <div class="text h1" id="name">Yaswanth Pasupuleti</div>
-            <div class="text h2" id="title">Front-end Developer</div>
-          </div>
-        </div>
-        <div class="col" id="icons">
-          <div class="d-none d-lg-block">
+<div class="container-fuild" id="hello">
+  <p><span id="spin"></span></p>
+</div>
+
+<div class="container-fuild" id="page" style="display: none">
+  <section>
+    <div class="container-fuild">
+      <div class="flex-container">
+        <div class="row">
+          <div class="col" id="welcome">
             <div class="row">
-              <a
-                href="https://github.com/yaswanthp1"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img [src]="git" alt="github" />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/yaswanth-pasupuleti-129229166/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img [src]="linkedin" alt="linkedin" />
-              </a>
-              <a
-                href="https://drive.google.com/file/d/1xp7R4t_ak5JLmEMGqOP5UoJTJv2f7wiV/view?usp=share_link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img [src]="file" alt="filedownload" />
-              </a>
+              <div class="text h1" id="name">Yaswanth Pasupuleti</div>
+              <div class="text h2" id="title">Front-end Developer</div>
             </div>
           </div>
-          <div class="scroll-down"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="container-fuild" id="about">
-    <div class="row-12">
-      <div>
-        <h1 class="text" id="greet">Hi, I’m Yaswanth. Nice to meet you.</h1>
-      </div>
-      <div class="text" id="me">
-        I’m a Front-end developer who is passionate about UI design and new
-        technologies. Well-organised person, problem solver, and a fan of Anime.
-        Currently, I’m focused on building Technology Knowledge and Career
-        Development.
-      </div>
-      <div class="row mt-4" id="icons1">
-        <div class="col" *ngFor="let item of list">
-          <img [src]="item.ImageUrl" alt="i" id="skillimg" />
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="container-fuild" id="Experience">
-    <div>
-      <h1 class="text">Experience</h1>
-    </div>
-    <div class="row">
-      <div class="col-4 d-none d-lg-block">
-        <img src="assets/img/tcs.png" alt="TCS" id="tcs" />
-      </div>
-      <div class="col">
-        <div class="container">
-          <h1 class="d-lg-none d-xl-block d-xl-none" style="padding-top: 3vh">
-            Tata Consultancy Services
-          </h1>
-
-          <h2>
-            Angular Developer
-            <h2 class="text-muted">
-              October 2020 - Present <br />Mexico City, Mexico
-            </h2>
-          </h2>
-          <p class="h5" style="max-width: 600px; margin-left: 4vh">
-            At TCS, I work on Front End application based Angular framework and
-            softwares such as Jenkins, Bitbucket and OpenShift.<br />
-            I am involved in both dev and support team for Production based
-            model.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="container" id="skills">
-    <div class="row">
-      <div class="text">
-        <h1>Skills & Tools</h1>
-      </div>
-      <div class="list">
-        <mat-chip-list>
-          <mat-chip *ngFor="let item of skills">{{ item }}</mat-chip>
-        </mat-chip-list>
-      </div>
-      <div class="text" style="margin-top: 10vh">
-        <h1>Licenses & Certifications</h1>
-      </div>
-      <div class="col mt-5">
-        <mat-card style="background-color: white">
-          <mat-card-header style="color: black">
-            <mat-card-title>
-              Microsoft Certified: Azure Fundamentals
-            </mat-card-title>
-            <img
-              mat-card-avatar
-              src="assets/img/azure-fundamentals-600x600.png"
-              alt="Azure Fundamentals"
-            />
-          </mat-card-header>
-          <mat-card-content style="color: black">
-            Issued Nov 2021 - No Expiration Date
-          </mat-card-content>
-          <a
-            href="https://www.credly.com/badges/d67c4fd7-d234-4141-9558-d9a37df5919f?source=linked_in_profile"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <mat-chip>Show credential</mat-chip>
-          </a>
-        </mat-card>
-      </div>
-      <div class="col mt-5">
-        <mat-card style="background-color: white">
-          <mat-card-header>
-            <mat-card-title style="color: black">
-              Microsoft Certified: Azure Administrator
-            </mat-card-title>
-            <img
-              mat-card-avater
-              src="assets/img/azure-administrator-associate-600x600.png"
-              alt="Azure Administrator Associate"
-            />
-          </mat-card-header>
-          <mat-card-content style="color: black">
-            Issued Dec 2021 - Expires Dec 2022
-          </mat-card-content>
-          <a
-            href="https://www.credly.com/badges/de255db2-23be-437f-aa08-849a04e0f252?source=linked_in_profile"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <mat-chip>Show credential</mat-chip>
-          </a>
-        </mat-card>
-      </div>
-      <div class="col mt-2 mb-4">
-        <mat-card style="background-color: white">
-          <mat-card-header style="color: black">
-            <mat-card-title> HTML, CSS, and Javascript </mat-card-title>
-            <img mat-card-avatar src="assets/img/c.jpg" alt="Web" />
-          </mat-card-header>
-          <mat-card-content style="color: black">
-            Issued Apr 2019 - No Expiration Date
-          </mat-card-content>
-          <a
-            href="https://www.coursera.org/account/accomplishments/verify/5MMFM7A5JJ7W"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <mat-chip>Show credential</mat-chip>
-          </a>
-        </mat-card>
-      </div>
-      <div class="col mt-2">
-        <mat-card style="background-color: white">
-          <mat-card-header>
-            <mat-card-title style="color: black">
-              &nbsp; &nbsp; Python MasterClass &nbsp; &nbsp;
-            </mat-card-title>
-            <img mat-card-avater src="assets/img/u.jpg" alt="Python" />
-          </mat-card-header>
-          <mat-card-content style="color: black">
-            Issued Oct 2018 - No Expiration Date
-          </mat-card-content>
-          <a
-            href="https://www.udemy.com/certificate/UC-XDNMWVJ0/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <mat-chip>Show credential</mat-chip>
-          </a>
-        </mat-card>
-      </div>
-      <div class="text" style="margin-top: 10vh">
-        <h1>PUBLICATION</h1>
-      </div>
-      <div class="col mt-3">
-        <mat-card style="background-color: white">
-          <mat-card-header style="color: black">
-            <mat-card-title>
-              Automatic Seizure Classification using CNN
-            </mat-card-title>
-            <mat-card-title class="text-muted">
-              2020 International Conference on Communication and Signal
-              Processing (ICCSP)
-            </mat-card-title>
-          </mat-card-header>
-          <mat-card-content
-            style="
-              color: black;
-              font-size: 20px;
-              text-align: justify;
-              padding: 8 px;
-            "
-          >
-            In our world around one-third of people are suffering from seizures
-            and these people must have a continuous optimal medication process.
-            Now a day's systems are developed with an algorithm for the
-            detection of a seizure by using EEG data, sensors, and video/audio
-            captures. But it still unclear what combination of technologies will
-            give the best output of detection.
-          </mat-card-content>
-          <div class="row mb-3" style="color: black; font-size: 20px">
-            <div class="col">Publisher: IEEE</div>
-            <div class="col">Date of Conference: 28-30 July 2020</div>
-          </div>
-          <a
-            href="https://ieeexplore.ieee.org/document/9182338"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <mat-chip>Link</mat-chip>
-          </a>
-        </mat-card>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="container-fuild mt-5" id="contact">
-    <div class="d-none d-lg-block">
-      <div class="text-center pt-4">
-        <h1>Contact Me</h1>
-      </div>
-      <div class="row">
-        <div class="col">
-          <form
-            action="https://formsubmit.co/7e5459657274ba33070794ae36e6608a"
-            method="POST"
-            style="padding-left: 15vh"
-          >
-            <input type="hidden" name="_captcha" value="false" />
-            <input
-              type="hidden"
-              name="_subject"
-              value="New submission from Portfolio!"
-            />
-            <input type="hidden" name="_template" value="box" />
-            <div class="row">
-              <div class="col">
-                <mat-form-field appearance="fill" style="width: 25vh">
-                  <mat-label>First name</mat-label>
-                  <input matInput type="text" name="name" />
-                  <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-                </mat-form-field>
-
-                <mat-form-field appearance="fill" style="width: 25vh">
-                  <mat-label>Last name</mat-label>
-                  <input matInput />
-                  <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-                </mat-form-field>
-              </div>
+          <div class="col" id="icons">
+            <div class="d-none d-lg-block">
               <div class="row">
-                <mat-form-field appearance="fill" style="max-width: 55vh">
-                  <mat-label>Enter your email</mat-label>
-                  <input
-                    matInput
-                    placeholder="pat@example.com"
-                    [formControl]="email"
-                    type="email"
-                    name="email"
-                    required
-                  />
-                  <mat-error *ngIf="email.invalid">{{
-                    getErrorMessage()
-                  }}</mat-error>
-                </mat-form-field>
-              </div>
-              <div class="row">
-                <mat-form-field appearance="fill" style="max-width: 55vh">
-                  <mat-label>Your Message</mat-label>
-                  <input matInput type="text" name="message" />
-                </mat-form-field>
-              </div>
-            </div>
-            <mat-card-actions>
-              <div class="btn mx-3">
-                <button
-                  mat-raised-button
-                  color="accent"
-                  type="submit"
-                  (click)="showToatr()"
+                <a
+                  href="https://github.com/yaswanthp1"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  Send
-                </button>
+                  <img [src]="git" alt="github" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/yaswanth-pasupuleti-129229166/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img [src]="linkedin" alt="linkedin" />
+                </a>
+                <a
+                  href="https://drive.google.com/file/d/1xp7R4t_ak5JLmEMGqOP5UoJTJv2f7wiV/view?usp=share_link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img [src]="file" alt="filedownload" />
+                </a>
               </div>
-            </mat-card-actions>
-            <input
-              type="hidden"
-              name="_next"
-              value="https://yaswanthportfolio.netlify.app/"
-            />
-          </form>
-        </div>
-        <div class="col text-center" id="end">
-          <p>
-            If you have any questions about my services, or just want to say
-            hello, feel free to contact me.
-          </p>
+            </div>
+            <div class="scroll-down"></div>
+          </div>
         </div>
       </div>
     </div>
-    <mat-divider></mat-divider>
-    <div class="row">
-      <div class="text-center p-4" style="color: white">
-        <span>&#169; 2022 Copyright: Yaswanth Pasupuleti</span>
+  </section>
+
+  <section>
+    <div class="container-fuild" id="about">
+      <div class="row-12">
+        <div>
+          <h1 class="text" id="greet">Hi, I’m Yaswanth. Nice to meet you.</h1>
+        </div>
+        <div class="text" id="me">
+          I’m a Front-end developer who is passionate about UI design and new
+          technologies. Well-organised person, problem solver, and a fan of
+          Anime. Currently, I’m focused on building Technology Knowledge and
+          Career Development.
+        </div>
+        <div class="row mt-4" id="icons1">
+          <div class="col" *ngFor="let item of list">
+            <img [src]="item.ImageUrl" alt="i" id="skillimg" />
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+    <!-- </section>
+
+<section> -->
+    <div class="container-fuild" id="Experience">
+      <div>
+        <h1 class="text">Experience</h1>
+      </div>
+      <div class="row">
+        <div class="col-4 d-none d-lg-block">
+          <img src="assets/img/tcs.png" alt="TCS" id="tcs" />
+        </div>
+        <div class="col">
+          <div class="container">
+            <h1 class="d-lg-none d-xl-block d-xl-none" style="padding-top: 3vh">
+              Tata Consultancy Services
+            </h1>
+
+            <h2>
+              Angular Developer
+              <h2 class="text-muted">
+                October 2020 - Present <br />Mexico City, Mexico
+              </h2>
+            </h2>
+            <p class="h5" style="max-width: 600px; margin-left: 4vh">
+              At TCS, I work on Front End application based Angular framework
+              and softwares such as Jenkins, Bitbucket and OpenShift.<br />
+              I am involved in both dev and support team for Production based
+              model.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container" id="skills">
+      <div class="row">
+        <div class="text mt-4">
+          <h1>Skills & Tools</h1>
+        </div>
+        <div class="list">
+          <mat-chip-list>
+            <mat-chip *ngFor="let item of skills">{{ item }}</mat-chip>
+          </mat-chip-list>
+        </div>
+        <div class="text" style="margin-top: 10vh">
+          <h1>Licenses & Certifications</h1>
+        </div>
+        <div class="col mt-5">
+          <mat-card style="background-color: white">
+            <mat-card-header style="color: black">
+              <mat-card-title>
+                Microsoft Certified: Azure Fundamentals
+              </mat-card-title>
+              <img
+                mat-card-avatar
+                src="assets/img/azure-fundamentals-600x600.png"
+                alt="Azure Fundamentals"
+              />
+            </mat-card-header>
+            <mat-card-content style="color: black">
+              Issued Nov 2021 - No Expiration Date
+            </mat-card-content>
+            <a
+              href="https://www.credly.com/badges/d67c4fd7-d234-4141-9558-d9a37df5919f?source=linked_in_profile"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <mat-chip>Show credential</mat-chip>
+            </a>
+          </mat-card>
+        </div>
+        <div class="col mt-5">
+          <mat-card style="background-color: white">
+            <mat-card-header>
+              <mat-card-title style="color: black">
+                Microsoft Certified: Azure Administrator
+              </mat-card-title>
+              <img
+                mat-card-avater
+                src="assets/img/azure-administrator-associate-600x600.png"
+                alt="Azure Administrator Associate"
+              />
+            </mat-card-header>
+            <mat-card-content style="color: black">
+              Issued Dec 2021 - Expires Dec 2022
+            </mat-card-content>
+            <a
+              href="https://www.credly.com/badges/de255db2-23be-437f-aa08-849a04e0f252?source=linked_in_profile"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <mat-chip>Show credential</mat-chip>
+            </a>
+          </mat-card>
+        </div>
+        <div class="col mt-2 mb-4">
+          <mat-card style="background-color: white">
+            <mat-card-header style="color: black">
+              <mat-card-title> HTML, CSS, and Javascript </mat-card-title>
+              <img mat-card-avatar src="assets/img/c.jpg" alt="Web" />
+            </mat-card-header>
+            <mat-card-content style="color: black">
+              Issued Apr 2019 - No Expiration Date
+            </mat-card-content>
+            <a
+              href="https://www.coursera.org/account/accomplishments/verify/5MMFM7A5JJ7W"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <mat-chip>Show credential</mat-chip>
+            </a>
+          </mat-card>
+        </div>
+        <div class="col mt-2">
+          <mat-card style="background-color: white">
+            <mat-card-header>
+              <mat-card-title style="color: black">
+                &nbsp; &nbsp; Python MasterClass &nbsp; &nbsp;
+              </mat-card-title>
+              <img mat-card-avater src="assets/img/u.jpg" alt="Python" />
+            </mat-card-header>
+            <mat-card-content style="color: black">
+              Issued Oct 2018 - No Expiration Date
+            </mat-card-content>
+            <a
+              href="https://www.udemy.com/certificate/UC-XDNMWVJ0/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <mat-chip>Show credential</mat-chip>
+            </a>
+          </mat-card>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container" style="text-align: center; max-width: 800px">
+      <div class="row">
+        <div class="text mt-4">
+          <h1>PUBLICATION</h1>
+        </div>
+        <div class="col mt-3">
+          <mat-card style="background-color: white">
+            <mat-card-header style="color: black">
+              <mat-card-title>
+                Automatic Seizure Classification using CNN
+              </mat-card-title>
+              <mat-card-title class="text-muted">
+                2020 International Conference on Communication and Signal
+                Processing (ICCSP)
+              </mat-card-title>
+            </mat-card-header>
+            <mat-card-content
+              style="
+                color: black;
+                font-size: 20px;
+                text-align: justify;
+                word-wrap: break-word;
+                padding: 8px;
+              "
+            >
+              In our world around one-third of people are suffering from
+              seizures and these people must have a continuous optimal
+              medication process. Now a day's systems are developed with an
+              algorithm for the detection of a seizure by using EEG data,
+              sensors, and video/audio captures. <br />
+              But it still unclear what combination of technologies will give
+              the best output of detection.
+            </mat-card-content>
+            <div class="row mb-3" style="color: black; font-size: 20px">
+              <div class="col">Publisher: IEEE</div>
+              <div class="col">Date of Conference: 28-30 July 2020</div>
+            </div>
+            <a
+              href="https://ieeexplore.ieee.org/document/9182338"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <mat-chip>Link</mat-chip>
+            </a>
+          </mat-card>
+        </div>
+      </div>
+    </div>
+    <div class="container-fuild mt-5" id="contact">
+      <div class="d-none d-lg-block">
+        <div class="text-center pt-4">
+          <h1>Contact Me</h1>
+        </div>
+        <div class="row">
+          <div class="col">
+            <form
+              action="https://formsubmit.co/7e5459657274ba33070794ae36e6608a"
+              method="POST"
+              style="padding-left: 15vh"
+            >
+              <input type="hidden" name="_captcha" value="false" />
+              <input
+                type="hidden"
+                name="_subject"
+                value="New submission from Portfolio!"
+              />
+              <input type="hidden" name="_template" value="box" />
+              <div class="row">
+                <div class="col">
+                  <mat-form-field appearance="fill" style="width: 25vh">
+                    <mat-label>First name</mat-label>
+                    <input matInput type="text" name="name" />
+                    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                  </mat-form-field>
+
+                  <mat-form-field appearance="fill" style="width: 25vh">
+                    <mat-label>Last name</mat-label>
+                    <input matInput />
+                    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                  </mat-form-field>
+                </div>
+                <div class="row">
+                  <mat-form-field appearance="fill" style="max-width: 55vh">
+                    <mat-label>Enter your email</mat-label>
+                    <input
+                      matInput
+                      placeholder="pat@example.com"
+                      [formControl]="email"
+                      type="email"
+                      name="email"
+                      required
+                    />
+                    <mat-error *ngIf="email.invalid">{{
+                      getErrorMessage()
+                    }}</mat-error>
+                  </mat-form-field>
+                </div>
+                <div class="row">
+                  <mat-form-field appearance="fill" style="max-width: 55vh">
+                    <mat-label>Your Message</mat-label>
+                    <input matInput type="text" name="message" />
+                  </mat-form-field>
+                </div>
+              </div>
+              <mat-card-actions>
+                <div class="btn mx-3">
+                  <button
+                    mat-raised-button
+                    color="accent"
+                    type="submit"
+                    (click)="showToatr()"
+                  >
+                    Send
+                  </button>
+                </div>
+              </mat-card-actions>
+              <input
+                type="hidden"
+                name="_next"
+                value="https://yaswanthportfolio.netlify.app/"
+              />
+            </form>
+          </div>
+          <div class="col text-center" id="end">
+            <p>
+              If you have any questions about my services, or just want to say
+              hello, feel free to contact me.
+            </p>
+          </div>
+        </div>
+      </div>
+      <mat-divider></mat-divider>
+      <div class="row">
+        <div class="text-center p-4" style="color: white">
+          <span>&#169; 2022 Copyright: Yaswanth Pasupuleti</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

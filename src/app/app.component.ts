@@ -49,11 +49,20 @@ export class AppComponent implements AfterViewInit {
     'ANGULAR',
     'BOOTSTRAP',
     'RESPONSIVE & ADAPTIVE DESIGN',
-    'UI Maintenance',
+    'UI MAINTENANCE',
     'PYTHON',
     'MICROSOFT AZURE',
     'VISUAL STUDIO CODE',
   ];
+
+  ngOnInit(): void {
+    setTimeout(() => {
+      document.getElementById('hello')!.style.display = 'none';
+    }, 3000);
+    setTimeout(() => {
+      document.getElementById('page')!.style.display = '';
+    }, 3000);
+  }
 
   ngAfterViewInit(): void {
     const name: any = document.querySelector('#name');
@@ -68,7 +77,9 @@ export class AppComponent implements AfterViewInit {
       opacity: [0, 1],
       easing: 'easeInOutQuad',
       duration: 220,
-      delay: (_el: any, i: number) => 100 * (i + 1),
+      delay: (_el: any, i: number) => 3500 + 30 * i,
+      // duration: 220,
+      // delay: (_el: any, i: number) => 100 * (i + 1),
     });
 
     title.innerHTML = title.textContent.replace(
@@ -82,7 +93,7 @@ export class AppComponent implements AfterViewInit {
       opacity: [0, 1],
       easing: 'easeOutExpo',
       duration: 1200,
-      delay: (_el: any, i: number) => 2300 + 30 * i,
+      delay: (_el: any, i: number) => 4500 + 30 * i,
     });
 
     const f = document.getElementById('about')!;

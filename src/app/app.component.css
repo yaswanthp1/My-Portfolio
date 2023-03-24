@@ -10,6 +10,65 @@ phone:480px; // sn
   src: url("src/assets/fonts/Valencia.ttf") format("truetype");
 }
 
+#hello {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #302a18;
+  color: white;
+  font-size: 6vh;
+  font-weight: 500;
+}
+
+#spin:after {
+  content: "";
+  animation: spin 3s linear;
+}
+@keyframes spin {
+  0% {
+    content: "Hello";
+  }
+  10% {
+    content: "Bonjour";
+  }
+  20% {
+    content: "你好";
+  }
+  30% {
+    content: "Olá";
+  }
+  40% {
+    content: "नमस्ते";
+  }
+  50% {
+    content: "Здравствуйте";
+  }
+  60% {
+    content: "こんにちは";
+  }
+  70% {
+    content: "Hej";
+  }
+  80% {
+    content: "Χαίρετε";
+  }
+  90% {
+    content: "¡Hola!";
+  }
+}
+
+#page {
+  width: 100%;
+  height: 100%;
+  scroll-snap-type: both proximity;
+  overflow: scroll;
+}
+
+#page section {
+  scroll-snap-align: start;
+}
+
 #welcome {
   display: flex;
   height: 100vh;
@@ -163,6 +222,10 @@ mat-card img {
 
 a {
   text-decoration: none;
+}
+
+a > mat-chip {
+  cursor: pointer;
 }
 
 .list {
