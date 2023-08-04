@@ -107,9 +107,9 @@
           <h1>Skills & Tools</h1>
         </div>
         <div class="list">
-          <mat-chip-list>
+          <mat-chip-listbox>
             <mat-chip *ngFor="let item of skills">{{ item }}</mat-chip>
-          </mat-chip-list>
+          </mat-chip-listbox>
         </div>
         <div class="text" style="margin-top: 10vh">
           <h1>Licenses & Certifications</h1>
@@ -150,7 +150,7 @@
                 alt="Azure Administrator Associate"
               />
             </mat-card-header>
-            <mat-card-content style="color: black">
+            <mat-card-content style="padding-top: 2vh; color: black">
               Issued Dec 2021 - Expires Dec 2022
             </mat-card-content>
             <a
@@ -188,7 +188,7 @@
               </mat-card-title>
               <img mat-card-avater src="assets/img/u.jpg" alt="Python" />
             </mat-card-header>
-            <mat-card-content style="color: black">
+            <mat-card-content style="padding-top: 2vh; color: black">
               Issued Oct 2018 - No Expiration Date
             </mat-card-content>
             <a
