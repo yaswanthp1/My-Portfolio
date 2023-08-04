@@ -26,6 +26,7 @@
     "ngx-toastr": "16.2.0",
     "rxjs": "~7.5.5",
     "tslib": "^2.4.0",
+    "tsparticles": "^2.12.0",
     "tsparticles-engine": "^2.0.6",
     "zone.js": "~0.11.5"
   },
