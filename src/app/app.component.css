@@ -212,6 +212,7 @@ img {
 
 mat-chip {
   font-size: 2vh;
+  margin-top: 1.5dvh;
 }
 
 mat-card img {
