@@ -1,0 +1,1 @@
+ static ɵcmp: i0.ɵɵComponentDeclaration<NgParticlesComponent, "ng-particles", never, { "options": "options"; "url":"url"; "id": "id"; "particlesInit": "particlesInit"; }, { "particlesLoaded": "particlesLoaded"; }, never, never, false, never>;
