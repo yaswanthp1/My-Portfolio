@@ -2,15 +2,6 @@ import { Component, AfterViewInit, ElementRef } from '@angular/core';
 import { UntypedFormControl, Validators } from '@angular/forms';
 import { ToastrService } from 'ngx-toastr';
 declare var anime: any;
-import {
-  ClickMode,
-  Container,
-  Engine,
-  HoverMode,
-  MoveDirection,
-  OutMode,
-} from 'tsparticles-engine';
-import { loadFull } from 'tsparticles';
 
 @Component({
   selector: 'app-root',
@@ -21,86 +12,8 @@ export class AppComponent implements AfterViewInit {
   git: string = 'assets/img/github-original.svg';
   linkedin: string = 'assets/img/linkedin.svg';
   file: string = 'assets/img/download.svg';
-  id = 'tsparticles';
 
   email = new UntypedFormControl('', [Validators.required, Validators.email]);
-
-  particlesOptions = {
-    fpsLimit: 120,
-    interactivity: {
-      events: {
-        onClick: {
-          enable: true,
-          mode: ClickMode.push,
-        },
-        onHover: {
-          enable: true,
-          mode: HoverMode.repulse,
-        },
-        resize: true,
-      },
-      modes: {
-        push: {
-          quantity: 4,
-        },
-        repulse: {
-          distance: 200,
-          duration: 0.4,
-        },
-      },
-    },
-    particles: {
-      color: {
-        value: '#000',
-      },
-      links: {
-        color: '#000',
-        distance: 150,
-        enable: true,
-        opacity: 0.15,
-        width: 1,
-      },
-      collisions: {
-        enable: true,
-      },
-      move: {
-        diraction: MoveDirection.none,
-        enable: true,
-        outModes: {
-          default: OutMode.bounce,
-        },
-        random: true,
-        speed: 3,
-        straight: false,
-      },
-      number: {
-        density: {
-          enable: true,
-          area: 500,
-        },
-        value: 50,
-      },
-      opacity: {
-        value: 0.2,
-      },
-      shape: {
-        type: 'circle',
-      },
-      size: {
-        value: { min: 1, max: 5 },
-      },
-    },
-    detectRetina: true,
-  };
-
-  particlesLoaded(container: Container): void {
-    console.log(container);
-  }
-
-  async init(engine: Engine): Promise<void> {
-    // console.log(engine);
-    await loadFull(engine);
-  }
 
   getErrorMessage() {
     if (this.email.hasError('required')) {
@@ -148,7 +61,7 @@ export class AppComponent implements AfterViewInit {
     }, 3000);
     setTimeout(() => {
       document.getElementById('page')!.style.display = '';
-    }, 2000);
+    }, 3000);
   }
 
   ngAfterViewInit(): void {

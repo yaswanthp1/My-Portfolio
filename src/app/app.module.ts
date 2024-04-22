@@ -13,7 +13,6 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { ToastrModule } from 'ngx-toastr';
-import { NgParticlesModule } from 'ng-particles';
 
 @NgModule({
   declarations: [AppComponent],
@@ -29,7 +28,6 @@ import { NgParticlesModule } from 'ng-particles';
     MatInputModule,
     ReactiveFormsModule,
     MatButtonModule,
-    NgParticlesModule,
     ToastrModule.forRoot(),
   ],
   providers: [],
